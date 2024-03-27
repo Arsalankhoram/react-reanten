@@ -14,10 +14,10 @@ export default function Navbar() {
                     <NavLink to="/iphone15-anten">بازگردانی آنتن آیفون ۱۵</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/blogs">بلاگ</NavLink>
+                    <NavLink to="/reviews">نظرات مشتریان</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/about">تماس با ما</NavLink>
+                    <NavLink to="/contact-us">تماس با ما</NavLink>
                 </li>
             </ul>
         </nav>

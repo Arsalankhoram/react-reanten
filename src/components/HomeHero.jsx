@@ -1,7 +1,10 @@
 import HeroImage from '../images/HomeHeroImage.svg'
 import PrimaryBtn from './PrimaryBtn'
+import { useWindowScroll } from "@uidotdev/usehooks"
 
 export default function HomeHero() {
+    const clickFunction = () => scrollTo({ left: 0, top: 650, behavior: "smooth" })
+    const [{ x, y }, scrollTo] = useWindowScroll();
     return (
         <div className="container mx-auto flex justify-between m-8 content-center">
             <div className='w-1/2 content-center'>
@@ -15,7 +18,7 @@ export default function HomeHero() {
                 <p className='text-xl font-medium leading-relaxed mt-2'>
                     استفاده از آنتن و اینترنت برای هر شهروند حق مسلمی هست که از دارندگان آیفون ۱۴ و ۱۵ گرفته شده، برای همین تیم ری‌آنتن تصمیم گرفت این خدمات رو به عنوان راهکاری موقت تا زمان باز شدن رجیستر این دستگاه‌ها ارائه کنه.
                 </p>
-                <PrimaryBtn text="کسب اطلاعات بیشتر" icon="info" />
+                <PrimaryBtn text="کسب اطلاعات بیشتر" icon="info" onclick={clickFunction} />
             </div>
             <img src={HeroImage} alt="Hero Image" className='w-1/2' />
         </div>

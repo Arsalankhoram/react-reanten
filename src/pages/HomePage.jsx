@@ -4,9 +4,7 @@ import ReantenProcess from "../components/ReantenProcess";
 import HomeSections from "../components/HomeSections";
 import Reviews from "../components/Reviews";
 import SecondaryBtn from "../components/SecondaryBtn";
-
-
-
+import MainFooter from "../components/MainFooter";
 
 export default function HomePage() {
     return (
@@ -28,9 +26,15 @@ export default function HomePage() {
             />
             <Reviews />
             <div className="flex justify-center">
-                <SecondaryBtn text="مشاهده همه نظرات" color="black" />
+                <SecondaryBtn text="مشاهده همه نظرات" color="#1c6e6a" link="/reviews"/>
             </div>
-
+            {/* <HomeSections
+                sub="پرتکرارترین سوالات"
+                title="<span className='text-primary'>سوالات متداول</span> مشتریان"
+                text="تلاش کردیم با پاسخ دادن به این سوالات ابهامات ذهنی شما رو برطرف کنیم. با این حال اگر همچنان سوال دارید با ما در تماس باشید."
+                margin="my-20"
+            /> */}
+            <MainFooter />
         </>
     )
 }
