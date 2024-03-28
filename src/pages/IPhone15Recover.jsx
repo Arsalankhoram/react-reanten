@@ -1,4 +1,6 @@
 import MainHeader from "../components/MainHeader";
+import MainFooter from "../components/MainFooter";
+
 
 export default function IPhone15Recover() {
     return (
@@ -7,6 +9,7 @@ export default function IPhone15Recover() {
             <div className="container mx-auto">
                 هنوز دیتایی برای این صفحه قرار داده نشده است
             </div>
+            <MainFooter/>
         </>
 
     )
